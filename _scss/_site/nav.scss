@@ -1,0 +1,22 @@
+.nav--items {
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  background-color: $color-main;
+  width: 100%;
+  top: 0;
+  li {
+    padding: 1rem;
+  }
+  @media (min-width: 40rem) {
+    top: auto;
+    width: auto;
+    background-color: transparent;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: left top;
+    flex-flow: row-reverse;
+  }
+}

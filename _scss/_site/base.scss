@@ -1,0 +1,50 @@
+// html {
+//   font-size: calc(16px + (12 * ((80vw - 620px) / 3880)));
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+ html, body {
+  position: relative;
+  height: 100%;
+}
+.site {
+
+}
+.main {
+  position: relative;
+  background: $color-off-main;
+  max-width: 50rem;
+  font: $font-body;
+}
+
+.main-section {
+  padding-top: 3rem;
+  @media (min-width: 40rem) {
+    padding-top: 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: $font-title;
+  color: $color-dark;
+  margin: 0;
+  padding: 2rem;
+  background: $color-main;
+  border: .5px dotted $color-accent;
+  border-top: 0;
+}
+
+a {
+  font: $font-body;
+  display: block;
+  color: inherit;
+  color: $color-gray;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}

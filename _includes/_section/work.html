@@ -1,0 +1,19 @@
+<section id="work" class="main-section">
+  <h1>Work</h1>
+
+
+  {% for furniture in site.furniture %}
+  <div class="furniture">
+    <h3>{{ furniture.piece-title }} | {{ furniture.piece-size }} | {{ furniture.built-on }}</h3>
+    {% for image in furniture.images %}
+    <img id="{{ image.img-title }}" src="{{ image.img-link }}" alt="{{ image.img-title }}" width="300">
+
+    <div id="{{ image.img-modal }}" class="modal">
+      <span class="close" onclick="document.getElementById('{{ image.img-modal}}').style.display='none'">&times;</span>
+      <img class="modal-content" id="{{ image.img-number }}">
+      <div id="{{ image.img-caption }}">{{ image.img-title }}</div>
+    </div>
+    {% endfor %}
+    </div>
+    {% endfor %}
+</section>

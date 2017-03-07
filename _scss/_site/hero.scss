@@ -1,0 +1,17 @@
+.hero {
+  height: 100vh;
+  background-image: url("../assets/img/wolf-wood-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-color: $color-accent;
+  background-blend-mode: lighten;
+}
+
+.hero__tagline {
+  font-size: 10vmin;
+}
+
+.hero__copy {
+  font-size: 8vmin;
+}

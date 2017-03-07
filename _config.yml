@@ -1,0 +1,7 @@
+name: Wolf Wood Co.
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json, yarn.lock"]
+permalink: pretty
+
+collections:
+  - furniture

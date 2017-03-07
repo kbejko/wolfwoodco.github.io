@@ -1,0 +1,12 @@
+- img-link: ../assets/img/wolf-wood-main.jpg
+  img-title: one
+  img-number: 1
+  img-modal: modal1
+- img-link: ../assets/table.jpg
+  img-title: two
+  img-number: 2
+  img-modal: modal2
+- img-link: ../assets/working.jpg
+  img-title: three
+  img-number: 3
+  img-modal: modal3

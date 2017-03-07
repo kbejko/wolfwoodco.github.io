@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+      <div class="site g">
+        {% include _section/nav.html %}
+        <main role="main" class="main g--col-10">
+          {{ content }}
+        </main>
+      </div>
+      <script src="/scripts/main.js" charset="utf-8"></script>
+    </body>
+</html>
