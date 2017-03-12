@@ -1,34 +1,35 @@
-.about-joe {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  img {
-    max-width: 200px;
-    display: block;
-    border-radius: 50%;
-    shape-outside: circle();
-    float: left;
-    margin-right: .5rem;
-  }
-}
-
-.test {
-  background-color: $color-main;
-}
-
-svg {
-  width: 2rem;
-}
-
-svg path {
-  fill: #6B6D76;
-}
-
-.social-icons {
-  display: flex;
+.contact {
   justify-content: space-around;
-  margin-top: 2rem;
-  @media (min-width: 40rem) {
-    margin-top: 10rem;
+  .about-joe {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    padding-right: 1rem;
+    img {
+      max-width: 200px;
+      display: block;
+      border-radius: 50%;
+      shape-outside: circle();
+      float: left;
+      margin-right: 1.5rem;
+    }
+  }
+  svg {
+    width: 2rem;
+  }
+
+  svg path {
+    fill: $color-dark;
+    transition: .3s ease;
+  }
+
+  svg:hover path {
+    fill: $color-accent;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
   }
 }

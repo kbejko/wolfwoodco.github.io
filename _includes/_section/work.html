@@ -1,19 +1,27 @@
 <section id="work" class="main-section">
   <h1>Work</h1>
 
-
   {% for furniture in site.furniture %}
+  <h3 class="piece-title">{{ furniture.piece-title }}</h3>
   <div class="furniture">
-    <h3>{{ furniture.piece-title }} | {{ furniture.piece-size }} | {{ furniture.built-on }}</h3>
     {% for image in furniture.images %}
-    <img id="{{ image.img-title }}" src="{{ image.img-link }}" alt="{{ image.img-title }}" width="300">
-
-    <div id="{{ image.img-modal }}" class="modal">
-      <span class="close" onclick="document.getElementById('{{ image.img-modal}}').style.display='none'">&times;</span>
-      <img class="modal-content" id="{{ image.img-number }}">
-      <div id="{{ image.img-caption }}">{{ image.img-title }}</div>
+    <div class="furniture--image">
+      <img id="{{ image.img-title }}" src="{{ image.img-link }}" alt="{{ furniture.piece-title }}">
+    </div>
+    <div class="close" onclick="document.getElementById('{{ image.img-modal}}').style.display='none'">
+      <div id="{{ image.img-modal }}" class="modal">
+        <img class="modal-content" id="{{ image.img-number }}">
+      </div>
     </div>
     {% endfor %}
+    </div>
+    <div class="furniture--description">
+      <p>{{furniture.description}}</p>
+      <span>Length: {{furniture.length}} | Width: {{furniture.width}} | Height: {{furniture.height}} | Thickness: {{furniture.thickness}}</span>
+    </div>
+    <div class="furniture--buttons">
+      <button type="button" name="button" class="furniture--button"><a href="mailto:wolfwoodco@gmail.com?subject={{furniture.piece-title}}&body=Hi Joe, I saw this piece on your site and had a few questions...">Contact Joe</a></button>
+      <button type="button" name="button" class="furniture--button"><a href="{{furniture.etsy-link}}" target="_blank">Buy on Etsy</a></button>
     </div>
     {% endfor %}
 </section>

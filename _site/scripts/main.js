@@ -304,183 +304,121 @@ document.querySelector('.contact').addEventListener('click', function(e){
 
 var modal = document.getElementById('piece-one-modal-1');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-one-number-one');
 var modalImg = document.getElementById('piece-one-number-1');
-var captionText = document.getElementById('piece-one-first');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-one-modal-2');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-one-number-two');
 var modalImg = document.getElementById('piece-one-number-2');
-var captionText = document.getElementById('piece-one-second');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-one-modal-3');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-one-number-three');
 var modalImg = document.getElementById('piece-one-number-3');
-var captionText = document.getElementById('piece-one-third');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-one-modal-4');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-one-number-four');
 var modalImg = document.getElementById('piece-one-number-4');
-var captionText = document.getElementById('piece-one-fourth');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-one-modal-5');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-one-number-five');
 var modalImg = document.getElementById('piece-one-number-5');
-var captionText = document.getElementById('piece-one-fifth');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-one-modal-6');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-one-number-six');
 var modalImg = document.getElementById('piece-one-number-6');
-var captionText = document.getElementById('piece-one-sixth');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
+var modal = document.getElementById('piece-one-modal-7');
 
-
-var modal = document.getElementById('piece-three-modal-1');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('piece-three-number-one');
-var modalImg = document.getElementById('piece-three-number-1');
-var captionText = document.getElementById('piece-three-first');
+var img = document.getElementById('piece-one-number-seven');
+var modalImg = document.getElementById('piece-one-number-7');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
-var modal = document.getElementById('piece-three-modal-2');
+var modal = document.getElementById('piece-one-modal-8');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('piece-three-number-two');
-var modalImg = document.getElementById('piece-three-number-2');
-var captionText = document.getElementById('piece-three-second');
+var img = document.getElementById('piece-one-number-eight');
+var modalImg = document.getElementById('piece-one-number-8');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-var modal = document.getElementById('piece-three-modal-3');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('piece-three-number-three');
-var modalImg = document.getElementById('piece-three-number-3');
-var captionText = document.getElementById('piece-three-third');
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
@@ -488,61 +426,121 @@ span.onclick = function() {
 
 var modal = document.getElementById('piece-two-modal-1');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-two-number-one');
 var modalImg = document.getElementById('piece-two-number-1');
-var captionText = document.getElementById('piece-two-first');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-two-modal-2');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-two-number-two');
 var modalImg = document.getElementById('piece-two-number-2');
-var captionText = document.getElementById('piece-two-second');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 
 var modal = document.getElementById('piece-two-modal-3');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('piece-two-number-three');
 var modalImg = document.getElementById('piece-two-number-3');
-var captionText = document.getElementById('piece-two-third');
+var captionText = document.getElementById('');
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
+  modal.style.display = "none";
+}
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+var modal = document.getElementById('piece-two-modal-4');
+
+var img = document.getElementById('piece-two-number-four');
+var modalImg = document.getElementById('piece-two-number-4');
+var captionText = document.getElementById('');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('piece-two-modal-5');
+
+var img = document.getElementById('piece-two-number-five');
+var modalImg = document.getElementById('piece-two-number-5');
+var captionText = document.getElementById('');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('piece-two-modal-6');
+
+var img = document.getElementById('piece-two-number-six');
+var modalImg = document.getElementById('piece-two-number-6');
+var captionText = document.getElementById('');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('piece-two-modal-7');
+
+var img = document.getElementById('piece-two-number-seven');
+var modalImg = document.getElementById('piece-two-number-7');
+var captionText = document.getElementById('');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('piece-two-modal-8');
+
+var img = document.getElementById('piece-two-number-eight');
+var modalImg = document.getElementById('piece-two-number-8');
+var captionText = document.getElementById('');
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+var close = document.getElementsByClassName("close")[0];
+close.onclick = function() {
   modal.style.display = "none";
 }
 

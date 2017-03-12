@@ -617,52 +617,15 @@ ul {
 .hero__copy {
   font-size: 8vmin; }
 
-.post__thumb {
-  background-color: #FCFCFC;
-  max-width: 320px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  -webkit-box-shadow: 3px 7px 7px 0px rgba(107, 109, 118, 0.25);
-          box-shadow: 3px 7px 7px 0px rgba(107, 109, 118, 0.25);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
-  .post__thumb:hover {
-    -webkit-box-shadow: 1px 3px 3px 0px rgba(107, 109, 118, 0.35);
-            box-shadow: 1px 3px 3px 0px rgba(107, 109, 118, 0.35); }
-  .post__thumb img {
-    width: 300px;
-    display: inline;
-    margin: 0 auto;
-    padding-bottom: 1rem;
-    padding-top: 1rem; }
-  .post__thumb--title {
-    font-size: 2rem;
-    border: none;
-    border-bottom: 1px dotted #C98986; }
-  .post__thumb--built {
-    font-size: 1rem;
-    border: none;
-    border-bottom: 1px dotted #C98986; }
-
-#myImg {
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-
-#myImg:hover {
-  opacity: 0.7; }
-
 /* The Modal (background) */
 .modal {
   display: none;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 8rem;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -672,41 +635,33 @@ ul {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: #C98986;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */ }
+  background-color: #F8F0FB;
+  /* Black w/ opacity */
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out; }
 
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px; }
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px; }
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+  width: 94%;
+  max-width: 50rem;
   -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s; }
+          animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; }
 
 @-webkit-keyframes zoom {
   from {
-    -webkit-transform: scale(0); }
+    -webkit-transform: scale(0);
+            transform: scale(0); }
   to {
-    -webkit-transform: scale(1); } }
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 @keyframes zoom {
   from {
@@ -716,71 +671,90 @@ ul {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer; }
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%; } }
+.piece-title {
+  background-color: #6B6D76;
+  color: #F8F0FB;
+  border: none;
+  font-size: 5vmin;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem; }
 
 .furniture {
   margin-top: 1rem;
-  margin-left: 4rem;
-  background-color: transparent; }
-  .furniture h3 {
-    background-color: transparent;
-    border: none; }
-
-.furniture:last-child {
-  margin-bottom: 1rem; }
-
-.about-joe {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem; }
-  .about-joe img {
-    max-width: 200px;
-    display: block;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
-    -webkit-shape-outside: circle();
-            shape-outside: circle();
-    float: left;
-    margin-right: .5rem; }
-
-.test {
-  background-color: #FCFCFC; }
-
-svg {
-  width: 2rem; }
-
-svg path {
-  fill: #6B6D76; }
-
-.social-icons {
+  background-color: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .furniture--image {
+    width: 18rem;
+    padding: .5rem; }
+    .furniture--image img {
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in;
+      width: 100%; }
+  .furniture--description, .furniture--buttons {
+    text-align: center; }
+  .furniture--button {
+    padding: 0;
+    border: none;
+    background-color: #C98986;
+    margin: 2rem;
+    -webkit-box-shadow: -6px 6px 0 0px #6B6D76;
+            box-shadow: -6px 6px 0 0px #6B6D76;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    .furniture--button a {
+      color: #FCFCFC;
+      display: block;
+      padding: .5rem; }
+  .furniture--button:hover {
+    -webkit-box-shadow: -2px 2px 0 0px #6B6D76;
+            box-shadow: -2px 2px 0 0px #6B6D76; }
+
+.furniture:last-child {
+  margin-bottom: 1rem; }
+
+.contact {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
-  margin-top: 2rem; }
-  @media (min-width: 40rem) {
-    .social-icons {
-      margin-top: 10rem; } }
+          justify-content: space-around; }
+  .contact .about-joe {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    padding-right: 1rem; }
+    .contact .about-joe img {
+      max-width: 200px;
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-shape-outside: circle();
+              shape-outside: circle();
+      float: left;
+      margin-right: 1.5rem; }
+  .contact svg {
+    width: 2rem; }
+  .contact svg path {
+    fill: #211A1D;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+  .contact svg:hover path {
+    fill: #C98986; }
+  .contact .social-icons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-top: 2rem; }
